@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Fortuna</title>
+    <!-- CSS ONLY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity= "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+  <header>
+    
+      <nav class="navbar is-link">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="">
+              <h2 class="logotipo">Fortuna</h2>
+              <!-- <img src="" alt="" width="112" height="28"> -->
+            </a>
+            <div role="button" class="navbar-burger " aria-label="menu" aria-expanded="true" data-target="navbarExampleTransparentExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </div>
+          </div>
+      
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-size-5" href="">
+                <i class="fa-solid fa-house"></i>   Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-size-5" href="#">
+                  <i class="fa-solid fa-clipboard-question"></i>    Trivias
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item is-size-5" href="">
+                    Conocimiento General
+                  </a>
+                  <a class="navbar-item is-size-5" id="math" href="">
+                    Matemáticas
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Historia
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Lógica
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                    Arte
+                  </a>
+                  <a class="navbar-item is-size-5" href="">
+                      Deportes
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    </header>
+<!-- 
+  <div class="container" id="content">
+    <h1>¡Bienvenidos!</h1>
+
+    <p class="is-size-5">
+      Te damos la bienvenida a la trivia Fortuna, nuestra trivia consta de 6 temáticas variadas con las que puedes poner a prueba tus conocimientos. Elige la temática que mas te guste y da tu mejor esfuerzo, te deseamos suerte.
+    </p>
+
+    <div class="parent">
+      <img class="libro" src="./src/img/libro.jpg" alt="libro">
+    </div>
+
+    <div class="parent">
+     <button class="button is-success is-size-4">Comenzar</button>
+    </div> -->
+
+
+  </div>
+ <div class="columns is-desktop flex" id="triviaContainer">
+        <div class="column is-half">
+            <div class="card ">
+              <header id="category" class="card-header-title flex category ">
+              </header>
+              <header class="card-header quiz-score flex" >
+               <span  id="correct-score"></span>/<span id="total-question"></span>
+              </header>
+                <header class="card-header quiz-question flex" id="question">
+                  <h2 class="quiz-question"></h2>
+                </header>
+                <div class="card-content">
+                  <ul class="quiz-options" id="options">
+                    <div class="spinner-border text-primary" id="spinner" role="status">
+                      <span class="visually-hidden"></span>
+                    </div>
+                    <li class="selected" id="answer1"></li>
+                    <li id="answer2"></li>
+                    <li id="answer3"></li>
+                    <li id="answer4"></li>
+                  </ul>
+                  <div id="result">
+
+                  </div>
+                  <footer class="card-footer">
+                    <a href="#" id="checkAnswer" class="card-footer-item">Next
+                    <a href="#" class="card-footer-item" id="play-again">Play Again!</a>
+                  </footer>
+            </div>
+        </div>
+      </div>
+     </div>
+<script src="https://kit.fontawesome.com/1a7569622b.js" crossorigin="anonymous"></script>
+<script src="./src/js/index.js"></script>
+
+</body>
+</html>
